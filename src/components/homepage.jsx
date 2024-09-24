@@ -5,7 +5,9 @@ import Cardskerala from './cardskerala'
     return(
         
             <>
+            
             <Slider/>
+            <br/>
             <Cardskerala/>
             </>
         

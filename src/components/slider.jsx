@@ -2,6 +2,10 @@ import Carousel from 'react-bootstrap/Carousel';
 import Pictureframe from './pictureframes';
 import bg1 from './images/img1.webp'
 import bg2 from './images/img2.webp'
+import bg3 from './images/img3.jpg'
+import bg4 from './images/img4.jpg'
+
+
 
 
 
@@ -11,27 +15,35 @@ function Slider() {
       <Carousel.Item interval={1000}>
         <Pictureframe imageUrl={bg1}/>
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 >Kerala</h3>
+          <p>God's Own Country</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={500}>
       <Pictureframe imageUrl={bg2}/>
         
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3 >Kerala</h3>
+        <p>God's Own Country</p>
         </Carousel.Caption>
       </Carousel.Item>
-      {/* <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
+      <Carousel.Item>
+      <Pictureframe imageUrl={bg3}/>
+        
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+        <h3 >Kerala</h3>
+        <p>God's Own Country</p>
         </Carousel.Caption>
-      </Carousel.Item> */}
+      </Carousel.Item>
+
+      <Carousel.Item>
+      <Pictureframe imageUrl={bg4}/>
+        
+        <Carousel.Caption>
+        <h3 >Kerala</h3>
+        <p>God's Own Country</p>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
   );
 }

@@ -3,7 +3,13 @@ import Card from 'react-bootstrap/Card';
 import k  from  './images/kochi.jpg'
 import alap from './images/alappuzha.jpg';
 import  mn from './images/munnar.jpg';
-import  knr from './images/kannur.jpg';
+import  knr from './images/kannur.webp';
+import  tvm from './images/trivandrum.jpg';
+import  cal from './images/kozhikkod.webp';
+import  mal from './images/malappuram.webp';
+
+
+
 
 // import svp from './images/s_vallay_park.jpg'
 import { Container, Row,Col } from 'react-bootstrap';
@@ -20,7 +26,16 @@ function Cardskerala(){
         {idno:3,title:'Munnar',
          description:"Munnar is a town in the Western Ghats mountain range in India’s Kerala state. ",imageUrl:mn},   
          {
-            idno:4 ,title:"Kannur" , description:"osdsabfdlk" ,imageUrl:knr
+            idno:4 ,title:"Kannur" , description:"Kannur (Malayalam: [kɐɳːuːr] ), formerly known in English as Cannanore, is a city and a municipal corporation in the state of Kerala, India." ,imageUrl:knr
+         },
+         {
+            idno:5 ,title:"Trivandrum" , description:"Thiruvananthapuram, formerly known as Trivandrum, is the capital city of the Indian state of Kerala. It is the most populous city in Kerala" ,imageUrl:tvm
+         },
+         {
+            idno:6 ,title:"Kozhikkod" , description:"Kozhikode (pronounced [koːɻikːoːɖɨ̆] ), official name until 1990 was Calicut, is a city along the Malabar Coast in the state of Kerala in India" ,imageUrl:cal
+         },
+         {
+            idno:7 ,title:"Malappuram" , description:"Malappuram (also Malapuram) (Malayalam: [mɐlɐpːurɐm] ) is a town in Kerala and the headquarters of the Malappuram district in Kerala, India. It is the 4th largest urban agglomeration in Kerala" ,imageUrl:mal
          }
         
     ]
