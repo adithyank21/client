@@ -1,5 +1,6 @@
 import './App.css'
-import Loginpage from './components/loginpage';
+
+import Loginpage from './components/loginpage'
 
 import Aboutpage from './components/aboutpage'
 import Cardskerala from './components/cardskerala'
@@ -13,7 +14,7 @@ function App() {
 const Hpage =lazy(()=>import('./components/homepage'))
 const Aboutpage = lazy(()=>import("./components/aboutpage"))
 const Rpage =lazy(()=>import('./components/registerpage'))
-const Lpage =lazy(()=>import('./components/Loginpage'))
+const Lpage =lazy(()=>import('./components/loginpage'))
 
 
   return (
