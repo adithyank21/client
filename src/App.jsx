@@ -1,4 +1,6 @@
 import './App.css'
+import Loginpage from './components/loginpage';
+
 import Aboutpage from './components/aboutpage'
 import Cardskerala from './components/cardskerala'
 import Headernav from './components/headernav'
