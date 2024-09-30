@@ -47,7 +47,7 @@ function Headernav() {
               </NavDropdown.Item>
             </NavDropdown>
            <Button variant='danger' onClick={()=>{
-            setcomment("test")
+            setcomment("My cards from header")
            }}>Test</Button>
           </Nav>
         </Navbar.Collapse>
