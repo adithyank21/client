@@ -10,6 +10,7 @@ import {Routes,Route} from 'react-router-dom'
 import Homepage from './components/homepage'
 import { lazy,Suspense } from 'react'
 import { Spinner } from 'react-bootstrap'
+import { ComponentProvider } from './components/commentProvider'
 function App() {
 const Hpage =lazy(()=>import('./components/homepage'))
 const Aboutpage = lazy(()=>import("./components/aboutpage"))
@@ -19,6 +20,7 @@ const Aboutpage = lazy(()=>import("./components/aboutpage"))
 
   return (
     <>
+    <ComponentProvider>
     <Headernav/>
     <section>
       <Suspense  fallback={<div>
@@ -36,7 +38,7 @@ const Aboutpage = lazy(()=>import("./components/aboutpage"))
     </Routes>
       </Suspense>
     </section>
-    
+    </ComponentProvider>
      
     </>
   )

@@ -6,7 +6,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import commentContext from './commentProvider';
+import {useContext} from 'react'
 function Headernav() {
+  const {comment,setcomment} = useContext(commentContext)
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -43,7 +46,9 @@ function Headernav() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-           
+           <Button variant='danger' onClick={()=>{
+            setcomment("test")
+           }}>Test</Button>
           </Nav>
         </Navbar.Collapse>
    

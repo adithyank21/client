@@ -8,7 +8,8 @@ import  tvm from './images/trivandrum.jpg';
 import  cal from './images/kozhikkod.webp';
 import  mal from './images/malappuram.webp';
 
-
+import { useContext} from 'react';
+import commentContext from './commentProvider';
 
 
 // import svp from './images/s_vallay_park.jpg'
@@ -17,7 +18,7 @@ import '../App.css'
 import { useState } from 'react';
 function Cardskerala(){
     const [title,setTitle]=useState("")
-    
+    const{comment}=useContext(commentContext)
     const record=[
         {idno:1,title:'Kochi',
             description:"Kochi (also known as Cochin) is a city in southwest India's coastal Kerala state. It has been a port since 1341, ",imageUrl:k},
@@ -108,6 +109,11 @@ function Cardskerala(){
       
 
        
+        </Row>
+        <Row>
+            <Col>
+            {comment}
+            </Col>
         </Row>
        </Container>
      
